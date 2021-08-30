@@ -6,7 +6,7 @@ metadata:
   namespace: default
   annotations:
     build.shipwright.io/build-run-deletion: "true"
-    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   source:
     url: https://github.com/shipwright-io/sample-go
