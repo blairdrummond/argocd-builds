@@ -3,6 +3,9 @@ apiVersion: shipwright.io/v1alpha1
 kind: BuildRun
 metadata:
   name: kaniko-golang-buildrun
+  namespace: default
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   buildRef:
     name: kaniko-golang-build

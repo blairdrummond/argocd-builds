@@ -3,8 +3,10 @@ apiVersion: shipwright.io/v1alpha1
 kind: Build
 metadata:
   name: kaniko-golang-build
+  namespace: default
   annotations:
     build.shipwright.io/build-run-deletion: "true"
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   source:
     url: https://github.com/shipwright-io/sample-go
